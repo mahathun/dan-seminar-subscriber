@@ -2,7 +2,9 @@
 
 SEMINAR SUBSCRIBER FOR THE EVENTS CALENDAR PRO
 ============================================== 
+
 > This plugin requires ‘The Event Calendar’ plugin to be installed and will work alongside with it
+
 ----------
 #### ADMIN SECTION
 
