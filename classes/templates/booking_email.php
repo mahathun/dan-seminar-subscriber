@@ -11,18 +11,18 @@ function sendBookingMail(){
     $post_table = $wpdb->prefix . 'posts';
     $table_name = $wpdb->prefix . 'dan_seminar_register';
 
-    $result = $wpdb->get_results("SELECT $post_table.post_title, $table_name.participation_method
+    $result = $wpdb->get_results("SELECT $post_table.post_title
       FROM $post_table
-      LEFT JOIN $table_name ON ($post_table.ID = $table_name.seminar_id)
+      
       WHERE $post_table.ID=$seminar_id");
 
     $title = "Booking Confirmation : ".$result[0]->post_title ;
-    $greeting = "Hi ";
+    $greeting = "Hi " .$name;
     $signature = "Regards,\neSocSci Team.";
     $bookingContent = "";
-    if($result[0]->participation_method == 'in-person'){
+    if($participation_method == 'in-person'){
       $bookingContent=get_post_meta($seminar_id, "_BookingEmailInPersonInstructions", true);
-    }else if($result[0]->participation_method == 'video-conference'){
+    }else if($participation_method == 'video-conference'){
       $bookingContent=get_post_meta($seminar_id, "_BookingEmailZoomInstructions", true);
     }
 

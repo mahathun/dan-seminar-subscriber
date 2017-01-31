@@ -42,7 +42,10 @@ if(isset($_REQUEST['seminar-register-form']) && $_REQUEST['seminar-register-form
       );
 
       //queueing the booking email
-      add_action('plugins_loaded', 'sendBookingMail');
+
+        add_action('plugins_loaded', 'sendBookingMail');
+
+
 
     }else{
 

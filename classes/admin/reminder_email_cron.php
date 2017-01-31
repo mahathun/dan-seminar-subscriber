@@ -12,7 +12,8 @@ function sendReminderEmail(){
                                   pm2.meta_value as post_end_date,
                                   pm3.meta_value as reminder_email_zoom_url,
                                   pm4.reminder_email_sent as reminder_email_sent,
-                                  pm4.user_email as email
+                                  pm4.user_email as email,
+                                  pm4.name as name
                                 FROM wp_posts
                                 LEFT JOIN wp_postmeta AS pm1 ON (wp_posts.ID = pm1.post_id AND pm1.meta_key='_EventStartDateUTC')
                                 LEFT JOIN wp_postmeta AS pm2 ON (wp_posts.ID = pm2.post_id AND pm2.meta_key='_EventEndDateUTC')
@@ -49,7 +50,7 @@ function sendReminderEmail(){
       if($timeDifference < $oneDayInSeconds){
 
         $title = "Reminder : ".$result->post_title ;
-        $greeting = "Hi ";
+        $greeting = "Hi ".$result->name;
         $signature = "Regards,eSocSci Team.";
         $zoomEmailContent = $result->reminder_email_zoom_url;
 
