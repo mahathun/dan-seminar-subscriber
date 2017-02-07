@@ -7,7 +7,7 @@ SEMINAR SUBSCRIBER FOR THE EVENTS CALENDAR PRO
 
 ----------
 ### What is dan-seminar-subscriber
-'dan-seminar-subscriber' is a wordpress plugin  to use with `'The Event Calendar'` plugin to make event reservations. It helps administrators to collect information of participants for an event to one place. and it also sends booking emails and reminder emails to event participants as well.
+'dan-seminar-subscriber' is a wordpress plugin  to use with `'The Event Calendar'` plugin to make event reservations. It helps administrators to collect information of participants for an event into one place. and it also sends booking emails and reminder emails to event participants as well.
 
 > click [here](https://mahathun.github.io/dan-seminar-subscriber/) to see more informations. 
 
@@ -19,6 +19,9 @@ SEMINAR SUBSCRIBER FOR THE EVENTS CALENDAR PRO
 3. Open the browser and log into the dashboard of the wordpress installation as an administrator 
 4. Goto plugins menu and install the plugin
 5. whola !, you are good to do.
+
+### Usage and Documentation
+Usage instruction and brief documentation can be found at [https://mahathun.github.io/dan-seminar-subscriber](https://mahathun.github.io/dan-seminar-subscriber/)
 
 ### Uninstall
 
